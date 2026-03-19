@@ -1,0 +1,33 @@
+/* Genericons - Icon Font Alternative */
+/* Since we don't have the font files, we use CSS-only alternatives */
+
+/* Base icon style */
+.genericons,
+.genericon,
+[class*="genericon-"] {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Since genericons font files are not available locally,
+   we'll rely on CSS ::before pseudo-elements with unicode characters
+   that are similar to the original genericons glyphs.
+   The main icons used in Fukasawa theme are calendar and category. */
+
+/* Calendar icon - genericon-month (\f303) */
+.genericon-month::before,
+.genericon-date::before {
+  content: "\1F4C5"; /* Unicode calendar emoji */
+  font-family: inherit;
+  font-size: 0.9em;
+}
+
+/* Category icon - genericon-category (\f301) */
+.genericon-category::before {
+  content: "\1F4C1"; /* Unicode folder emoji */
+  font-family: inherit;
+  font-size: 0.9em;
+}

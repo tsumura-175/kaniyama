@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カニ山会 - 自然の中で、おもいっきりからだを動かしてあそぼう！</title>
+  <meta name="description" content="調布の里山・かに山で、おにごっこやかくれんぼ、ドッジボールなど体を動かすあそびを中心に活動するコミュニティです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">メインコンテンツへ</a>
+
+  <!-- ========== Header ========== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="site-logo">
+        <a href="index.html" aria-current="page">カニ山会</a>
+      </div>
+      <nav class="header-nav" aria-label="メインナビゲーション">
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">ホーム</a>
+          <a href="about/index.html">カニ山会について</a>
+        </div>
+        <div class="header-sns">
+          <a href="https://www.instagram.com/kaniyama_asobi/" target="_blank" rel="noopener noreferrer" class="sns-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/groups/950529615358871/" target="_blank" rel="noopener noreferrer" class="sns-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://line.me/R/ti/p/%40188jjquw" target="_blank" rel="noopener noreferrer" class="sns-icon" aria-label="LINE">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          </a>
+        </div>
+      </nav>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav id="mobile-nav" class="mobile-nav" aria-label="モバイルナビゲーション">
+    <div class="mobile-nav-links">
+      <a href="index.html">ホーム</a>
+      <a href="about/index.html">カニ山会について</a>
+    </div>
+    <div class="mobile-nav-sns">
+      <a href="https://www.instagram.com/kaniyama_asobi/" target="_blank" rel="noopener noreferrer" class="sns-icon" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/groups/950529615358871/" target="_blank" rel="noopener noreferrer" class="sns-icon" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="https://line.me/R/ti/p/%40188jjquw" target="_blank" rel="noopener noreferrer" class="sns-icon" aria-label="LINE">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main" role="main">
+
+    <!-- ========== Hero Section ========== -->
+    <section class="hero" aria-label="ヒーロー">
+      <div class="hero-image">
+        <img src="wp-content/uploads/2022/01/2201_a-2048x1536.jpg" alt="かに山の広場でたき火を楽しむ子どもたち" width="2048" height="1536" fetchpriority="high">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">自然の中で、おもいっきり<br>からだを動かしてあそぼう！</h1>
+        <a href="#activities" class="hero-cta">
+          活動を見る
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 12L2 6h12L8 12z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== Next Event (Pinned) ========== -->
+    <section class="next-event" aria-label="次回の活動予定">
+      <div class="next-event-card">
+        <div class="next-event-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>
+        </div>
+        <div class="next-event-body">
+          <p class="next-event-label">次回のカニ山会</p>
+          <p class="next-event-text">次回の予定が決まり次第お知らせします。LINEでフォローして最新情報をチェック！</p>
+        </div>
+        <div class="next-event-cta">
+          <a href="https://line.me/R/ti/p/%40188jjquw" target="_blank" rel="noopener noreferrer" class="btn btn--cta">LINEでフォロー</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Activity Grid ========== -->
+    <section id="activities" class="activity-section">
+      <div class="container">
+        <h2 class="section-title">活動のきろく</h2>
+
+        <div class="activity-grid">
+
+          <!-- 1: 2023年7月 -->
+          <article class="activity-card fade-in">
+            <a href="archives/320/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2023/07/5.jpg" alt="かに山で水でっぽう大会の様子" width="1000" height="667" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山で水でっぽう大会</h3>
+                <time class="card-date" datetime="2023-07">2023年7月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 2: 2023年2月 -->
+          <article class="activity-card fade-in">
+            <a href="archives/312/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2023/04/02.jpg" alt="かに山で宝探し＆謎解きの様子" width="2000" height="1500" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山で宝探し＆謎解き</h3>
+                <time class="card-date" datetime="2023-02">2023年2月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 3: 2023年1月 -->
+          <article class="activity-card fade-in">
+            <a href="archives/291/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2023/01/line_oa_chat_230117_112741.jpg" alt="かに山でたき火あそびの様子" width="1000" height="750" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山でたき火あそび</h3>
+                <time class="card-date" datetime="2023-01">2023年1月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 4: 2022年7月 -->
+          <article class="activity-card fade-in">
+            <a href="archives/280/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2022/07/202207_6.jpg" alt="かに山で水鉄砲大会の様子" width="1000" height="750" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山で水鉄砲大会 2022</h3>
+                <time class="card-date" datetime="2022-07">2022年7月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 5: 2022年5月 -->
+          <article class="activity-card fade-in">
+            <a href="archives/268/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2022/05/2205_f-e1652486556656.jpg" alt="かに山でたき火＆草だんごづくりの様子" width="1761" height="1243" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山でたき火＆草だんごづくり</h3>
+                <time class="card-date" datetime="2022-05">2022年5月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 6: 2022年4月 -->
+          <article class="activity-card fade-in">
+            <a href="archives/250/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2022/04/0423_c.jpg" alt="かに山でなぞなぞ宝探しの様子" width="2000" height="1500" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山でなぞなぞ宝探し</h3>
+                <time class="card-date" datetime="2022-04">2022年4月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 7: 2022年3月 -->
+          <article class="activity-card fade-in">
+            <a href="archives/235/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2022/03/202203_4.jpg" alt="かに山で宝さがし鬼ごっこの様子" width="2000" height="1500" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山で宝さがし鬼ごっこ</h3>
+                <time class="card-date" datetime="2022-03">2022年3月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 8: 2022年2月（予定） -->
+          <article class="activity-card fade-in">
+            <a href="archives/224/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2022/01/2201_b.jpg" alt="かに山でたき火あそびの案内" width="1478" height="1110" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--plan">活動予定</span>
+                <h3 class="card-title">かに山でたき火あそび</h3>
+                <time class="card-date" datetime="2022-02">2022年2月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 9: 2022年1月 -->
+          <article class="activity-card fade-in">
+            <a href="archives/209/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2022/01/2201_a-2048x1536.jpg" alt="かに山でたき火の様子" width="2048" height="1536" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山でたき火</h3>
+                <time class="card-date" datetime="2022-01">2022年1月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- === Hidden cards (load more) === -->
+
+          <!-- 10: 2021年12月 -->
+          <article class="activity-card is-hidden">
+            <a href="archives/196/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/12/IMG_9015_2-2048x1536.jpg" alt="かに山でクリスマス会の様子" width="2048" height="1536" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山でクリスマス会</h3>
+                <time class="card-date" datetime="2021-12">2021年12月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 11: 2021年11月 -->
+          <article class="activity-card is-hidden">
+            <a href="archives/185/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/11/2111_05-2048x1536.jpg" alt="かに山でドッチボール＆逃走中の様子" width="2048" height="1536" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山でドッチボール＆逃走中！</h3>
+                <time class="card-date" datetime="2021-11">2021年11月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 12: 2021年11月（予定） -->
+          <article class="activity-card is-hidden">
+            <a href="archives/182/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/08/o1f3bc06146bc2032465569017bf07f69_4620693218548308395_210524_31-1.jpg" alt="かに山で逃走中の案内" width="1478" height="1110" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--plan">活動予定</span>
+                <h3 class="card-title">かに山で「逃走中」しよう！</h3>
+                <time class="card-date" datetime="2021-11">2021年11月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 13: 2021年10月 -->
+          <article class="activity-card is-hidden">
+            <a href="archives/169/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/10/2110_5-2048x1536.jpg" alt="かに山で鬼ごっこ＆長なわとびの様子" width="2048" height="1536" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山で鬼ごっこ＆長なわとび</h3>
+                <time class="card-date" datetime="2021-10">2021年10月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 14: 2021年9月 -->
+          <article class="activity-card is-hidden">
+            <a href="archives/159/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/09/2109_2.jpg" alt="かに山でドッチボールの様子" width="2000" height="1344" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">かに山でドッチボール</h3>
+                <time class="card-date" datetime="2021-09">2021年9月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 15: 2021年9月（予定） -->
+          <article class="activity-card is-hidden">
+            <a href="archives/154/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/09/IMG_6453-edited.jpg" alt="かに山でドッチボールの案内" width="1620" height="912" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--plan">活動予定</span>
+                <h3 class="card-title">かに山でドッチボールしよう！</h3>
+                <time class="card-date" datetime="2021-09">2021年9月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 16: 2021年8月 -->
+          <article class="activity-card is-hidden">
+            <a href="archives/141/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/09/020108_2.jpg" alt="広場で手持ち花火を楽しむ様子" width="2000" height="1416" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">広場で手持ち花火！</h3>
+                <time class="card-date" datetime="2021-08">2021年8月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 17: お知らせ -->
+          <article class="activity-card is-hidden">
+            <a href="archives/124/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/08/カニ山会ポスター_b.jpg" alt="カニ山会の参加者募集ポスター" width="1640" height="2321" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--news">お知らせ</span>
+                <h3 class="card-title">ポスターできました！</h3>
+                <time class="card-date" datetime="2021-08">2021年8月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 18: 2021年8月（予定） -->
+          <article class="activity-card is-hidden">
+            <a href="archives/24/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/08/3648053_s.jpg" alt="手持ち花火の案内" width="640" height="427" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--plan">活動予定</span>
+                <h3 class="card-title">手持ち花火しよう！@国領</h3>
+                <time class="card-date" datetime="2021-08">2021年8月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 19: 2021年7月 -->
+          <article class="activity-card is-hidden">
+            <a href="archives/10/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/08/line_oa_chat_210719_111900.jpg" alt="水でっぽう大会の様子" width="1478" height="1110" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">水でっぽう大会</h3>
+                <time class="card-date" datetime="2021-07">2021年7月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 20: 2021年6月 -->
+          <article class="activity-card is-hidden">
+            <a href="archives/102/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/08/IMG_6868.jpg" alt="大きなボールでドッチボール＆なわとびの様子" width="1108" height="1480" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">大きなボールでドッチボール＆なわとび</h3>
+                <time class="card-date" datetime="2021-06">2021年6月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 21: 2021年5月 -->
+          <article class="activity-card is-hidden">
+            <a href="archives/100/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/08/o1f3bc06146bc2032465569017bf07f69_4620693218548308395_210524_15-1.jpg" alt="宝さがしを楽しむ子どもたち" width="1478" height="1110" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">宝さがし</h3>
+                <time class="card-date" datetime="2021-05">2021年5月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 22: 2021年4月 -->
+          <article class="activity-card is-hidden">
+            <a href="archives/73/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/08/DSC_0784.jpg" alt="鬼ごっこ＆巨大シャボン大会の様子" width="1620" height="1080" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">鬼ごっこ＆巨大シャボン大会</h3>
+                <time class="card-date" datetime="2021-04">2021年4月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 23: 2021年4月 -->
+          <article class="activity-card is-hidden">
+            <a href="archives/67/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/08/4620693218547200929.0faf6328951ab0f8db922eb03a5ad05d.21040407-1.jpg" alt="ボールあそび＆かに山探検の様子" width="1108" height="1480" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">ボールあそび＆かに山探検</h3>
+                <time class="card-date" datetime="2021-04">2021年4月</time>
+              </div>
+            </a>
+          </article>
+
+          <!-- 24: 2021年2月 -->
+          <article class="activity-card is-hidden">
+            <a href="archives/53/index.html">
+              <div class="card-image">
+                <img src="wp-content/uploads/2021/08/IMG_5697.jpg" alt="ドッチボール大会の様子" width="1478" height="1110" loading="lazy">
+              </div>
+              <div class="card-body">
+                <span class="card-tag card-tag--activity">活動実績</span>
+                <h3 class="card-title">ドッチボール大会</h3>
+                <time class="card-date" datetime="2021-02">2021年2月</time>
+              </div>
+            </a>
+          </article>
+
+        </div><!-- /.activity-grid -->
+
+        <div style="text-align: center; margin-top: 40px;">
+          <button id="load-more-btn" class="btn btn--ghost" type="button">もっと見る</button>
+        </div>
+
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ========== About Teaser ========== -->
+    <section class="about-teaser" aria-labelledby="about-teaser-heading">
+      <div class="about-teaser-inner">
+        <div class="about-teaser-image">
+          <img src="wp-content/uploads/2021/08/DSC_0784.jpg" alt="かに山の広場で遊ぶ子どもたち" width="1620" height="1080" loading="lazy">
+        </div>
+        <div class="about-teaser-body">
+          <h2 id="about-teaser-heading" class="about-teaser-title">カニ山会について</h2>
+          <p class="about-teaser-text">調布の里山・かに山とその周辺で、おにごっこやかくれんぼ、ドッジボールなどのからだを動かすあそびを中心に、月に1〜2回、あそびの会を開催しています。</p>
+          <p class="about-teaser-text">大切にしているのは、それぞれの子が、そのときやりたいことを自由にできる場であること。</p>
+          <a href="about/index.html" class="btn btn--primary">もっと詳しく</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA Section ========== -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-card">
+          <h2 id="cta-heading" class="cta-title">一緒にあそびませんか？</h2>
+          <p class="cta-text">参加申し込みはLINEから受け付けています。<br>お気軽にご連絡ください！</p>
+          <a href="https://line.me/R/ti/p/%40188jjquw" target="_blank" rel="noopener noreferrer" class="btn btn--cta">LINEで申し込む</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-sns">
+        <a href="https://www.instagram.com/kaniyama_asobi/" target="_blank" rel="noopener noreferrer" class="sns-icon" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/groups/950529615358871/" target="_blank" rel="noopener noreferrer" class="sns-icon" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://line.me/R/ti/p/%40188jjquw" target="_blank" rel="noopener noreferrer" class="sns-icon" aria-label="LINE">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 カニ山会</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
