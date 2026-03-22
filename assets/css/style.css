@@ -58,7 +58,7 @@
   --transition-normal: 300ms ease;
 
   /* Layout */
-  --header-height: 64px;
+  --header-height: 80px;
   --max-width: 1120px;
 
   /* Z-index scale */
@@ -247,6 +247,12 @@ button {
 
 .site-logo a:hover {
   color: var(--color-primary);
+}
+
+.site-logo-img {
+  height: 68px;
+  width: auto;
+  display: block;
 }
 
 /* Desktop Navigation */
@@ -1318,7 +1324,7 @@ button {
 @media (max-width: 768px) {
 
   :root {
-    --header-height: 56px;
+    --header-height: 70px;
   }
 
   .header-nav {
